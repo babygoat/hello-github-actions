@@ -9,7 +9,4 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
-      - name: Check the reference variables
-        run: |
-          echo "GITHUB_REF: $GITHUB_REF"
-          echo "GITHUB.EVENT.PUSH_REF: ${{ github.event.push }}"
+      - uses: hmarr/debug-action@v1
