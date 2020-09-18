@@ -9,3 +9,7 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
+      - name: Check the reference variables
+        run: |
+          echo "GITHUB_REF:" + ${{ github_ref }}
+          echo "GITHUB.EVENT.PUSH_REF:" + ${{ github.event.push.ref }} 
