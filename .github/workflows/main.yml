@@ -11,5 +11,5 @@ jobs:
           MY_NAME: "Mona"
       - name: Check the reference variables
         run: |
-          echo "GITHUB_REF:" + ${{ GITHUB_REF }}
-          echo "GITHUB.EVENT.PUSH_REF:" + ${{ github.event.push.ref }} 
+          echo "GITHUB_REF:" + $GITHUB_REF
+          echo "GITHUB.EVENT.PUSH_REF:" + $github.event.push.ref
