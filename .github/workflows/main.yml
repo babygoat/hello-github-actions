@@ -9,4 +9,4 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
-      - uses: hmarr/debug-action
+      - uses: hmarr/debug-action@v1.0.0
